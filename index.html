@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="img/icon-JS.svg" alt="icon-JS" width="50px" height="50px">
+            <img class="menu_hamburguer" src="img/menu.svg" alt="menu-hamburguer" width="40px" height="40px">
+            <ul class="lista_menu">
+                <li><a class="menu_link" href="#">JavaScript</a></li>
+                <li><a class="menu_link" href="https://www.youtube.com/playlist?list=PLeuwJul7tRBfsm7sxnR5_7wG3KvaQ6oOt">Curso em Video</a></li>
+                <li><a class="menu_link" href="https://codepen.io/pen/">Praticar</a></li>
+                <li><a class="menu_link" href="#">Eventos</a></li>
+                <li id="livros"><a class="menu_link" href="#">Livros</a>
+                    <div class="livros_opcoes">
+                        <div class="livro1">
+                            <a href="https://www.amazon.com.br/JavaScript-Guia-Definitivo-David-Flanagan/dp/856583719X">
+                            <p>JavaScript: O guia definitivo - O Relly</p>
+                            <img src="./img/livro1.png" width="100px" alt="JavaScript: O guia definitivo - O Relly">
+                            </a><hr size="2" color="gray">
+                        </div>
+                        <div class="livro2">
+                            <a href="https://www.amazon.com.br/JavaScript-Programador-completo-funcionalidades-linguagem-ebook/dp/B088SLKN48">
+                            <p>JavaScript: Guia do Programador</p>
+                            <img src="./img/livro2.png" width="100px" alt="JavaScript: Guia do Programador">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Tudo sobre JavaScript!</h1>
+        <div class="card">
+            <h2 class="subtitulo">Conhecendo JavaScript</h2>
+            <div class="card__conteudo">
+                <ul class="lista">
+                    <li class="topicos">JavaScript foi criada em 1995, por Brendan Eich, a pedido da empresa Netscape 
+                        (um dos primeiros navegadores) com o objetivo de validar formulários HTML.</li>
+                    <li class="topicos">É uma linguagem de programação usada por desenvolvedores 
+                        para fazer páginas interativas da Internet.</li>
+                    <li class="topicos">ECMAScript é a versão padronizada do JavaScript.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Primeiros Passos em JavaScript</h2>
+            <div class="card__conteudo">
+                <ul class="lista">
+                    <li class="topicos">Instalar um navegador (Internet Explorer, Firefox, Google Chrome).</li>
+                    <li class="topicos">Baixar e instalar o VSCode (Visual Studio Code) e o NodeJS.</li>
+                    <li class="topicos">Saber que praticar e tão importante quanto assistir os vídeos. </li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Criando o primeiro Script</h2>
+            <div class="card__conteudo">
+                <ul class="lista">
+                    <li class="topicos"><b>alert('Olá, mundo!'):</b> vai aparecer na tela mensagem 
+                        de alerta "Olá, mundo!"</li>
+                    <img src="img/olaMundo.png" width="auto" height="auto" alt="Print-Number" class="exemplo"><br>
+                    <img src="img/olaMundo2.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+                    <li class="topicos"><b>window.confirm('Está gostando de JavaScript?'):</b> vai aparecer 
+                        na tela mensagem de confirmação "Está gostando de JavaScript?".</li>
+                    <img src="img/confirm.png" width="auto" height="auto" alt="Print-Number" class="exemplo"><br>
+                    <img src="img/confirm2.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+                    <li class="topicos"><b>prompt('Qual é seu nome?'):</b> vai aparecer 
+                        na tela mensagem de pergunta "Qual é seu nome?", possibilitando digitar no campo.</li>
+                    <img src="img/prompt.png" width="auto" height="auto" alt="Print-Number" class="exemplo"><br>
+                    <img src="img/prompt2.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Tipos de Dados e Variavéis</h2>
+            <div class="card__conteudo">
+                <ul class="lista">
+                    <p>Há sete tipos de dados:</p>
+                    <li class="topicos"><b>Boolean:</b> verdadeiro (true) or falso (false).</li>
+                    <li class="topicos"><b>Null:</b> variável nula.</li>
+                    <li class="topicos"><b>Undefined</b> variável indefinida.</li>
+                    <li class="topicos"><b>Number:</b> variável numérica. Pode ser inteira ou real.</li>
+                    <li class="topicos"><b>String:</b> são os textos, declarados entres aspas simples ou dupla.</li>
+                    <li class="topicos"><b>Symbol:</b> Usados internamente como chaves de propriedades de objetos.</li>
+                    <li class="topicos"><b>Object:</b> são estruturas de dados usadas para criar o equivalente em outras
+                    liguagens a listas, arrays, dicionários, arrays associativos, dentre outros.</li> <hr size="2" color="black">
+                    <li class="topicos"><b>Variáveis:</b> são criadas para guardar dados(números, strings e boolean) na memória.</li>
+                    <ul class="topicos">
+                        <li class="topicos"><b>var:</b> é declarada e iniciada no escopo da função, pode ser local ou global
+                             e é permitido a redeclaração e reatribuição.</li>
+                        <li class="topicos"><b>let:</b> é declarada no escopo da função, permite reatribuição mas não
+                        permite redeclaração.</li>
+                        <li class="topicos"><b>const:</b> é declarada no escopo da função, e não permite reatribuição name
+                        redeclaração;</li>
+                    </ul>
+                    <li class="topicos"><b>Indetificadores:</b> são os nomes que damos para as variáveis.</li>
+                    <ul class="topicos">
+                        <li class="topicos">Podem começar com letra, $ ou _.</li>
+                        <li class="topicos">Não podem começar com números.</li>
+                        <li class="topicos">É possível usar letras ou números, acentos e símbolos.</li>
+                        <li class="topicos">Nao podem conter espaços e palavras reservadas.</li>
+                    </ul>
+                    <li class="topicos"><b>Comentários: // -</b> em única linha de código e <b>/* -</b> 
+                    em mais de uma linha de código.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Tratamento de Dados</h2>
+            <h3 class="subtitulo">Conversão de Strings para Números</h3>
+            <ul class="lista">
+                        <li class="topicos">Existe três maneiras de converter strings em números:</li>
+                    <ul class="topicos">
+                        <li class="topicos"><b>Number.parseInt(n)</b> - Para transformar em números inteiros.</li>
+                        <li class="topicos"><b>Number.parseFloat(n)</b> - Para transformar em números decimais.</li>
+                        <li class="topicos"><b>Number(n)</b> - Para transformar em números inteiros e decimais.</li>                        
+                    </ul>
+                    <li class="topicos">Exemplos:</li>
+                    <img src="img/print-number.png" width="500px" height="auto" alt="Print-Number" class="exemplo">
+                    <img src="img/number1.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+                    <img src="img/number2.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+                    <img src="img/resultado.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+                </ul>           
+        </div>
+        <div class="card">
+                    <h3 class="subtitulo">Conversão de Números para Strings</h3>          
+                <ul class="lista">
+                    <li class="topicos">Existe duas maneiras de converter números em strings:</li>
+                    <ul class="topicos">
+                        <li class="topicos"><b>String(n)</b></li>
+                        <li class="topicos"><b>n.toString()</b></li>                        
+                    </ul>
+                    <li class="topicos">Exemplos:</li>
+                    <img src="img/print-string.png" width="500px" height="auto" alt="Print-String" class="exemplo">
+                    <img src="img/number1.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+                    <img src="img/number2.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+                    <img src="img/resultado.png" width="auto" height="auto" alt="resultado" class="exemplo">
+                    <li class="topicos"><b>Observação:</b> por padrão o prompt já é no formato <b>String</b>.</li>
+                </ul>
+        </div>
+        <div class="card">
+            <h3 class="subtitulo">Template Strings</h3>          
+        <ul class="lista">
+            <li class="topicos">É uma forma de formatar as strings usando <b>${nome} </b> crase<b>``.</b></li>
+            <li class="topicos">Exemplos:</li>
+            <img src="img/print-string.png" width="500px" height="auto" alt="Print-Number" class="exemplo">
+            <img src="img/number1.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+            <img src="img/number2.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+            <img src="img/resultado.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+        </ul>
+        </div>
+        <div class="card">
+            <h3 class="subtitulo">Formatando Números</h3>          
+        <ul class="lista">
+            <li class="topicos">Usando <b>toFixed()</b>:</li>
+            <li class="topicos">Exemplo 1:</li>
+            <img src="img/toFixed.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+            <p>Foi aumentado as casas decimais para 2.</p>
+            <li class="topicos">Exemplo 2:</li>
+            <img src="img/toFixed2.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+            <p>Foi aumentado as casas decimais para 3 e trocou o <b>ponto '.'</b> por <b>vírgula ','</b>.</p>
+            <li class="topicos">Usando <b>toLocaleString</b>:</li>
+            <li class="topicos">Exemplo 3:</li>
+            <img src="img/toLocaleString.png" width="auto" height="auto" alt="Print-Number" class="exemplo">
+            <p>Foi transformado o número no formato em reais R$.</p>            
+        </ul>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Operadores de JavaScript</h2>
+            <p class="paragrafo"><b>Ordem de execução dos operadores:</b><br> Operadores Aritméticos &gt; 
+                Operadores Relacionais &gt; Operadores Lógicos.</p>
+            <h3 class="subtitulo">Operadores Aritméticos e Atribuição</h3>
+            <ul class="lista">
+                <li class="topicos"><b>+</b> : Soma</li>
+                <li class="topicos"><b>-</b> : Subtrair</li>
+                <li class="topicos"><b>*</b> : Multiplicação</li>
+                <li class="topicos"><b>/</b> : Divisão</li>                        
+                <li class="topicos"><b>%</b> : Resto da Divisão</li>                        
+                <li class="topicos"><b>**</b> : Potência</li>               
+                <li class="topicos"><b>Ordem de Precedência:</b></li>
+                <img src="img/precedencia.png" width="200px" height="auto" alt="Precedência" class="exemplo">
+                <li class="topicos"><b>Simplificando:</b></li>
+                <img src="img/simplificando.png" width="200px" height="auto" alt="Simplificando" class="exemplo">
+                <li class="topicos"><b>Incremento:</b> Muito utilizado na programação.</li>
+                <img src="img/incremento.png" width="200px" height="auto" alt="Incremento" class="exemplo">
+            </ul>
+        </div>
+        <div class="card">
+            <h3 class="subtitulo">Operadores Relacionais</h3>
+            <ul class="lista">
+                <li class="topicos"><b>&gt;</b> : Maior que</li>
+                <li class="topicos"><b>&lt;</b> : Menor que</li>
+                <li class="topicos"><b>&gt;=</b> : Maior ou igual</li>
+                <li class="topicos"><b>&lt;=</b> : Menor ou igual</li>                        
+                <li class="topicos"><b>==</b> : Igual</li>                        
+                <li class="topicos"><b>!=</b> : Diferente</li>
+                <li class="topicos"><b>===</b> : Idêntico</li>
+                <li class="topicos"><b>!==</b> : Tipos diferentes</li>
+                <li class="topicos"><b>Exemplos:</b></li>
+                <img src="img/relacionais.png" width="200px" height="auto" alt="Relacionais" class="exemplo">
+                <li class="topicos"><b>Identidade:</b></li>
+                <img src="img/relacionais2.png" width="200px" height="auto" alt="Relacionais 2" class="exemplo">
+            </ul>
+        </div>
+        <div class="card">
+            <h3 class="subtitulo">Lógicos</h3>
+            <ul class="lista">
+                <li class="topicos"><b>!</b> : Negação (não)</li>
+                <li class="topicos"><b>&amp;&amp;</b> : Conjunção (e)</li>
+                <li class="topicos"><b>||</b> : Disjunção (ou)</li>      
+                <li class="topicos"><b>Ordem de execução</b> : ! (não), &amp;&amp; (e), || (ou).</li>      
+                <img src="img/logicos.png" width="auto" height="250px" alt="Lógicos" class="exemplo">
+                <li class="topicos"><b>Exemplos:</b></li>
+                <img src="img/logicos2.png" width="530px" height="auto" alt="Lógicos" class="exemplo">
+            </ul>
+        </div>
+        <div class="card">
+            <h3 class="subtitulo">Tenários</h3>
+            <ul class="lista">
+                <li class="topicos">É composto por <b>?</b> e <b>:</b> na mesma expressão.</li>             
+                <img src="img/ternário.png" width="550px" height="auto" alt="Exemplos Ternário" class="exemplo"> 
+                <li class="topicos">Tem três parte, o primeiro é o bloco de teste, 
+                    o segundo é o que vai acontecer quando o teste for verdadeiro e 
+                    o último é o que vai acontecer quando o teste for falso.</li>               
+                <li class="topicos"><b>Exemplo - 1 :</b></li>
+                <img src="img/exemploTernário1.png" width="auto" height="auto" alt="Exemplos Ternário" class="exemplo">
+                <li class="topicos"><b>Exemplo - 2 :</b></li>
+                <img src="img/exemploTernário2.png" width="auto" height="auto" alt="Exemplos Ternário 2" class="exemplo">
+            </ul>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">DOM (Document Object Model)</h2>
+            <h3 class="subtitulo">Conhecendo o DOM</h3>
+            <ul class="lista">
+                <li class="topicos">É o modelo de objetos para documento, sendo 
+                    conjunto de objetos dentro do navegador que podem ser manipulados.  </li>
+                <li class="topicos"><b>Árvore DOM</b> começa da raiz (window) que tem os objetos
+                (location, document, history).</li>
+                <img src="img/arvore DOM.png" width="auto" height="500px" alt="Árvore DOM" class="exemplo">
+                <li class="topicos"><b>Podemos selecionar os elementos por:</b> Tag, ID, Nome, Classe e Seletor.</li>
+                <li class="topicos"><b>Tag:</b> getElementsByTagName()</li>
+                <p>Pode selecionar mais de um elemento ou indicar apenas um elemento, 
+                    no exemplo abaixo selecionamos a tag <b>'p'</b> e indicamos com <b>[0]</b> qual elemento.</p>
+                <img src="img/elementTagName.png" width="500px" height="auto" alt="Tag Element" class="exemplo">
+                <p><b>innerText:</b> mostra o texto selecionado na tela.</p>
+                <li class="topicos"><b>ID:</b> getElementsById()</li>
+                <li class="topicos"><b>Name:</b> getElementsByName()</li>
+                <li class="topicos"><b>Classe:</b> getElementsByClassName()</li>
+                <li class="topicos"><b>Seletor:</b> querySelector() e querySelectorAll()</li>
+                <hr size="2" color="black">
+                <li class="topicos"><b>Elementos Parent:</b> .parentNode ou .parentElement</li>
+                <li class="topicos"><b>Elementos Child:</b> .childNode ou .childElement</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3 class="subtitulo">Eventos DOM</h3>
+            <ul class="lista">
+                <li class="topicos">São modificações que podemos fazer com os elementos. Existem
+                diversos eventos, alguns são para determinados elementos. Para saber mais
+                sobre os eventos disponíveis acessa o link: <a class="eventos" href="https://developer.mozilla.org/pt-BR/docs/Web/Events">Eventos DOM</a>.</li>
+                <li class="topicos"><b>Funções:</b> é um conjunto de códigos que vão ser executadas quando
+                o evento ocorrer. Bloco é delimitado entre as <b>chaves {}</b> e é nomeado como <b>function,</b>
+                nomes da funções são nomes do evento que podem ter parametros.</li>
+                <li class="topicos"><b>Exemplo 1:</b></li>
+                <img src="img/exemploDom2.png" width="550px" height="auto" alt="DOM 2" class="exemplo">          
+                <img src="img/exemploDom3.png" width="auto" height="auto" alt="DOM 3" class="exemplo">          
+                <img src="img/exemploDom4.png" width="auto" height="auto" alt="DOM 4" class="exemplo">      
+            </ul>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Condições</h2>
+            <ul class="lista">
+                <li class="topicos"><b>IF: </b> Se</li>
+                <li class="topicos"><b>ELSE: </b> Se não</li>
+                <img src="img/ifelse.png" width="auto" height="200px" alt="If e Else" class="exemplo">
+                <h3 class="subtitulo">Tipos de Condições</h3>
+                <li class="topicos"><b>Condições Simples:</b> é quando a condição tem apenas o <b>if</b>
+                se a condição for falsa não vai acontecer nada.</li>
+                <li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/condicaoSimples.png" width="550px" height="auto" alt="Condição Simples" class="exemplo">
+                <img src="img/condicaoSimples2.png" width="500px" height="auto" alt="Condição Simples" class="exemplo">
+                <hr size="2" color="black">
+                <li class="topicos"><b>Condições Composta:</b> é quando a condição tem <b>if</b> e <b>else</b>.
+                </li><li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/condicaoComposta.png" width="400px" height="auto" alt="Condição Composta" class="exemplo">
+                <img src="img/condicaoComposta2.png" width="200px" height="auto" alt="Condição Composta1" class="exemplo">
+                <hr size="2" color="black">
+                <li class="topicos"><b>Condições Aninhadas:</b> é uma condição composta com outras condições 
+                    dentro, usando o <b>if</b>, <b>else</b> e <b>else if</b>. <br>
+                </li><li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/condicaoAninhada.png" width="400px" height="auto" alt="Condição Aninhada" class="exemplo">
+                <img src="img/condicaoAninhada2.png" width="200px" height="auto" alt="Condição Aninhada2" class="exemplo">
+                <hr size="2" color="black">
+                <li class="topicos"><b>Condição Múltipla:</b> é utilizadas para valores fixos, tendo a possibilidade
+                    de outro valores. Usando a estrutura <b>switch</b>, sempre usar <b>break</b> 
+                    no final de cade <b>case</b>.
+                </li><li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/condicaoMultipla.png" width="450px" height="auto" alt="Condição Múltipla" class="exemplo"><br>
+                <img src="img/condicaoMultipla2.png" width="125px" height="auto" alt="Condição Múltipla" class="exemplo">
+            </ul>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Repetições (Laços)</h2>
+            <ul class="lista">
+                <li class="topicos"><b>WHILE: </b>Estrutura de repetição com o <i>teste lógico</i> no início, sendo que 
+                    <i>enquanto</i> a condição for verdadeira vai se repetindo até que a condição seja falsa.</li>
+                <img src="img/while1.png" width="auto" height="100px" alt="While" class="exemplo">
+                <li class="topicos"><b>DO WHILE: </b> Estrutura de repetição com teste lógico no final. Primeiro executa o 
+                    teste lógico e vai repetindo até que a condição for falsa.</li>
+                <img src="img/doWhile.png" width="auto" height="100px" alt="DoWhile" class="exemplo">            
+                <li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/while2.png" width="300px" height="auto" alt="Exemplo While" class="exemplo">
+                <img src="img/doWhile1.png" width="300px" height="auto" alt="Exemplo Do" class="exemplo"><br>
+                <img src="img/while3.png" width="150px" height="auto" alt="Resultado while e do" class="exemplo">
+                <p>No caso do exemplo acima tanto com <b>while</b> e <b>Do</b> o resultado é o mesmo</p>
+                <hr size="2" color="black">
+                <li class="topicos"><b>FOR:</b> tem três partes <b>(início; teste; incremento)</b>. Na primeira parte vai 
+                    fazer a inicialização e o teste, sendo que se o teste for verdadeiro vai executa o bloco, depois 
+                    retorna e faz o <b>incremento</b> e executa o bloco novamente. Se for o bloco for falsa, para de repetir.</li>
+                <img src="img/For.png" width="auto" height="100px" alt="Condição Aninhada" class="exemplo">
+                <li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/forExemplo.png" width="300px" height="auto" alt="Condição Aninhada" class="exemplo"><br>
+                <img src="img/forResultado.png" width="150px" height="auto" alt="Condição Aninhada" class="exemplo">
+            </ul>
+        </div>
+</div>
+     <script src="scripts.js"></script>
+    </main>
+    <footer>
+        <p>Desenvolvido por <b>Gabriel Resende</b></p>
+        <div class="rede-sociais">
+            <a href="https://github.com/ResendeG">
+                <img src="img/github.svg" width="30px" class="github">
+                <img src="img/githubB.svg" width="30px" class="githubB"></a>
+            <a href="#">
+                <img src="img/linkedin.svg" width="30px" class="linkedin">
+                <img src="img/linkedinB.svg" width="30px" class="linkedinB"></a>
+            <a href="https://www.instagram.com/resendevg">
+                <img src="img/instagram.svg" width="30px" class="instagram">
+                <img src="img/instagramB.svg" width="30px" class="instagramB"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

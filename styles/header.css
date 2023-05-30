@@ -1,0 +1,147 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu {
+    background: var(--cor-preto);
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+
+.lista_menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_link {
+    text-decoration: none;
+    color: var(--cor-branco);
+    padding: 0 2rem 0 2rem;
+    border-right: 1px solid var(--cor-amarelo);
+}
+
+.livros_opcoes {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    background: var(--cor-preto);
+    font-size: 1rem;
+    margin-top: 1.9rem;
+    border: 3px solid var(--cor-amarelo);
+    border-radius: 0 1rem 1rem 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul li .livros_opcoes .livro1:hover {
+    display: flex;
+}
+
+.livros_opcoes::before{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 30px;
+    width: 6px;
+    height: 6px;
+    background: var(--cor-amarelo);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.livros_opcoes p{
+    display: flex;
+    padding: 0.8rem;
+    color: var(--cor-branco);
+    justify-content: center;
+}
+
+.livros_opcoes a{
+    text-decoration: none;
+}
+
+.livros_opcoes img {
+    padding-bottom: 1rem;
+}
+
+.livro1:hover{
+    background: var(--cor-shadow);
+    border-radius: 0 0.8rem 0 0;
+}
+
+.livro2:hover{
+    background: var(--cor-shadow);
+    border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.menu_link:hover {
+    background: linear-gradient(90deg, rgba(235,154,3,1) 0%, rgba(210,218,4,1) 0%, rgba(255,184,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.menu_hamburguer {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .lista_menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(45deg, #ebfc00, #ec6d05, #ffe602, #ec6d05);
+        background-size: 500%;
+        animation: gradient 8s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        } 50% {
+            background-position: 100% 0%;
+        } 100% {
+            background-position: 0% 50%;
+        }
+    }
+    .menu_link {
+        display: flex;
+        padding: 2rem;
+        color: var(--cor-preto);
+        border-right: none;
+        border-bottom: 1px solid var(--cor-amarelo);
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .menu_link:hover {
+        background: var(--cor-branco);
+        color: var(--cor-preto);
+    }
+    .livros_opcoes {
+        position: relative;
+        width: 350px;
+        justify-content: center;
+        margin: auto;
+    }
+    .livros_opcoes::before{
+        left: 50%;
+    }
+    .menu_hamburguer {
+        display: flex;
+    }
+
+    .menu {
+        justify-content: space-between;
+    }
+}
+
+
