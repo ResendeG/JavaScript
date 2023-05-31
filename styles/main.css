@@ -40,7 +40,6 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
-    white-space: nowrap;
 }
 
 .topicos {
@@ -68,10 +67,11 @@ p, .exemplo {
     }
 
     .subtitulo {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        white-space: nowrap;
     }
 
     .titulo {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 }
