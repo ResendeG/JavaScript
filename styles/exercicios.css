@@ -1,0 +1,83 @@
+/* Contador */
+.container {
+    width: 330px;
+    background: var(--cor-branco);
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid var(--cor-preto);
+    border-radius: 1rem;
+    background: var(--linear-preto);
+    color: var(--cor-branco);
+}
+
+.texto {
+    font-weight: 600;
+    margin: 0.75rem auto;
+}
+
+.contar {
+    padding: 0.3rem 1rem 0.2rem 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid var(--cor-preto);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.contar:hover {
+    background: var(--cor-preto);
+    color: var(--cor-branco);
+    border: 2px solid var(--cor-amarelo);
+}
+
+#resultado {
+    margin-top: 1rem;
+}
+
+.subtitulo_exercicios {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 50%, rgb(8, 8, 8) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Tabuada */
+#tabela, #listaAnalisador {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    min-width: 150px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.btn_tabuada {
+    display: flex;
+    padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+    margin: 0.5rem auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid var(--cor-preto);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn_tabuada:hover {
+    background: var(--cor-preto);
+    color: var(--cor-branco);
+    border: 2px solid var(--cor-amarelo);
+}
+
+.texto_tabuada {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 600;
+    width: 200px;
+    margin: 0.5rem auto;
+    text-align: center;
+}

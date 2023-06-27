@@ -102,10 +102,10 @@ header {
         top: 80px;
         left: 0;
         width: 100%;
-        max-height: 600px;
+        max-height: 550px;
         overflow: auto;
         background: linear-gradient(45deg, #ebfc00, #ec6d05, #ffe602, #ec6d05);
-        background-size: 500%;
+        background-size: 400%;
         animation: gradient 8s ease infinite;
     }
 
@@ -135,7 +135,7 @@ header {
         position: relative;
         width: 350px;
         justify-content: center;
-        margin: auto;
+        margin: 0 auto 1rem;
     }
 
     .livros_opcoes::before{

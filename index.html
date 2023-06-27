@@ -13,10 +13,10 @@
             <img src="img/icon-JS.svg" alt="icon-JS" width="50px" height="50px">
             <img class="menu_hamburguer" src="img/menu.svg" alt="menu-hamburguer" width="40px" height="40px">
             <ul class="lista_menu">
-                <li><a class="menu_link" href="#">JavaScript</a></li>
+                <li><a class="menu_link" href="index.html">JavaScript</a></li>
                 <li><a class="menu_link" href="https://www.youtube.com/playlist?list=PLeuwJul7tRBfsm7sxnR5_7wG3KvaQ6oOt">Curso em Video</a></li>
                 <li><a class="menu_link" href="https://codepen.io/pen/">Praticar</a></li>
-                <li><a class="menu_link" href="#">Eventos</a></li>
+                <li><a class="menu_link" href="exercicios.html">Exercícios</a></li>
                 <li id="livros"><a class="menu_link" href="#">Livros</a>
                     <div class="livros_opcoes">
                         <a href="https://www.amazon.com.br/JavaScript-Guia-Definitivo-David-Flanagan/dp/856583719X">
@@ -39,7 +39,7 @@
         </nav>
     </header>
     <main>
-        <h1 class="titulo">Tudo sobre JavaScript!</h1>
+        <h1 class="titulo">O Básico de JavaScript!</h1>
         <div class="card">
             <h2 class="subtitulo">Conhecendo JavaScript</h2>
             <div class="card__conteudo">
@@ -331,6 +331,85 @@
                 <li class="topicos"><b>Exemplo:</b></li>
                 <img src="img/forExemplo.png" width="300px" height="auto" alt="FOR Exemplo" class="exemplo"><br>
                 <img src="img/forResultado.png" width="150px" height="auto" alt="FOR Resultado" class="exemplo">
+            </ul>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Variáveis Composta</h2>
+            <ul class="lista">
+                <li class="topicos">São capazes de armazenar <b>vários valores</b> em uma mesma estrutura.</li>
+                <li class="topicos"><b>Vetor (Array): </b> é composto de elementos, um elemento é um par que agrupa o espaço da memória com
+                    o valor que está colocado dentro dele e o índice.</li>  
+                <li class="topicos"><b>[ ]: </b>São utilizados colchetes para declarar os vetores.</li>         
+                <img src="img/variaveisComposta.png" width="500px" height="auto" alt="Varáveis Composta" class="exemplo">
+                <p><b>Observação:</b> o índice sempre começa com o valor 0.</p>
+                <hr size="2" color="black"><br>
+                <p></p><b>Existe duas formar de acrescentar valores a um array:</b></p>
+                <li class="topicos">nomeVariavel<b>.push()</b></li>
+                <li class="topicos"><b>nomeVariavel [i] = valor</b></li>
+                <li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/exemploPush.png" width="400px" height="auto" alt="Exemplo Push" class="exemplo">
+                <img src="img/resPush.png" width="300px" height="auto" alt="Resultado Push" class="exemplo">
+                <br><hr size="2" color="black"><br>
+                <li class="topicos"><b>.length:</b> é utilizado para saber o tamanho do array.</li>
+                <img src="img/length.png" width="500px" height="auto" alt="Exemplo Push" class="exemplo">
+                <p>Resultado:</p>
+                <img src="img/resultadoLength.png" width="300px" height="auto" alt="Resultado Push" class="exemplo">
+                <p><b>Observação:</b> no JavaScript <i>length</i> não tem () depois da palavra, é um atributo.</p>
+                <br><hr size="2" color="black"><br>
+                <li class="topicos"><b>.sort():</b> é utilizado para alterar a ordem dos elementos em ordem crescente.</li>
+                <img src="img/sort.png" width="500px" height="auto" alt="Sort" class="exemplo">
+                <p>Resultado:</p>
+                <img src="img/resultadoSort.png" width="300px" height="auto" alt="Resultado Sort" class="exemplo">
+                <hr size="2" color="black"><br>
+                <li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/exemploVetores.png" width="500px" height="auto" alt="Exemplo Vetores" class="exemplo">
+                <p>Forma mais simplificada:</p>
+                <img src="img/simplificados.png" width="500px" height="auto" alt="Simplificado Vetores" class="exemplo">
+                <p>Resultado:</p>
+                <img src="img/resultadoVetores.png" width="300px" height="auto" alt="Resultado Vetores" class="exemplo">
+                <br><hr size="2" color="black"><br>
+                <li class="topicos"><b>.indexOf():</b> é utilizado para buscar valores dentro de um vetor.</li>
+                <li class="topicos"><b>Exemplo:</b></li>
+                <img src="img/indexOf.png" width="500px" height="auto" alt="Sort" class="exemplo">
+                <p>Resultado:</p>
+                <img src="img/resultadoindexOf.png" width="300px" height="auto" alt="Resultado Sort" class="exemplo">
+                <p><b>Observação:</b> quando buscar e não encontrar o valor no vetor, o JavaScript vai retorna <b>- 1</b>.</p>
+            </ul>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Funções</h2>
+            <ul class="lista">
+                <li class="topicos">São ações executadas assim que são chamadas ou em decorrência de algum evento.</li>
+                <li class="topicos">Uma função pode receber <b>parâmetros</b> e retorna um <b>resultado</b>.</li>
+                <li class="topicos"><b>Parâmetro:</b> é composto de elementos, um elemento é um par que agrupa o espaço da memória com
+                    o valor que está colocado dentro dele e o índice.</li>  
+                <li class="topicos"><b>[ ]: </b>São utilizados colchetes para declarar os vetores.</li>         
+                <img src="img/funcao.png" width="300px" height="auto" alt="Função" class="exemplo">
+                <p><b>Exemplo:</b></p>
+                <img src="img/exemploFuncao.png" width="300px" height="auto" alt="Exemplo Função" class="exemplo">
+                <p>Resultado:</p>
+                <img src="img/resultadoFuncao.png" width="80px" height="auto" alt="Resultado Função" class="exemplo">
+                <hr size="2" color="black"><br>
+                <li class="topicos">No exemplo abaixo, podemos utilizar os parâmetros predefinidos (opcionais) que recebem 0:</li>         
+                <img src="img/parametros.png" width="300px" height="auto" alt="Função" class="exemplo">
+                <p>Resultado:</p>
+                <img src="img/resParametros.png" width="80px" height="auto" alt="Exemplo Função" class="exemplo">
+                <p>Caso não tivemos colocado os parâmetros predefinidos o resultado seria NaN, porque um valor seria <i>undefined</i>.</p>      
+                
+            </ul>
+        </div>
+        <div class="card">
+            <h2 class="subtitulo">Próximos Passos</h2>
+            <ul class="lista">
+                <li class="topicos">Fazer curso de HTML e CSS.</li>
+                <li class="topicos">Estudar <b>functions</b>.</li>
+                <li class="topicos">Estudar <b>objetos</b>.</li> 
+                <li class="topicos">Estudar <b>modularização</b>.</li>
+                <li class="topicos">Estudar <b>expressões regulares (RegEx)</b>.</li>
+                <li class="topicos">Estudar <b>JSON</b>.</li>
+                <li class="topicos">Estudar <b>AJAX</b>.</li>
+                <li class="topicos">Estudar <b>NodeJS</b>.</li>
+                <li class="topicos">Estudar <b>outros frameworks e bibliotecas</b>.</li>
             </ul>
         </div>
 </div>
